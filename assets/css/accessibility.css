@@ -1,0 +1,374 @@
+/* ── DYSLEXIA FONT IMPORT ────────────────────────────── */
+/* Font files are now loaded locally from assets/fonts/ */
+
+/* ── ACCESSIBILITY TOGGLE BUTTON ──────────────────────── */
+.accessibility-toggle {
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    z-index: 2000;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: #0071e3;
+    border: none;
+    color: white;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 12px rgba(0, 113, 227, 0.3);
+    transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+    min-width: 50px;
+    min-height: 50px;
+}
+
+.accessibility-toggle:hover {
+    background: #0058b0;
+    box-shadow: 0 6px 20px rgba(0, 113, 227, 0.4);
+    transform: scale(1.1);
+}
+
+.accessibility-toggle:focus-visible {
+    outline: 3px solid #F0EDE6;
+    outline-offset: 2px;
+}
+
+/* ── ACCESSIBILITY MENU ──────────────────────────────── */
+.accessibility-menu {
+    position: fixed;
+    bottom: 6rem;
+    right: 2rem;
+    background: #1A1A1A;
+    border: 2px solid #0071e3;
+    border-radius: 8px;
+    padding: 1.5rem;
+    z-index: 1999;
+    max-width: 280px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5);
+    display: none;
+    flex-direction: column;
+    gap: 1rem;
+    animation: slideUp 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.accessibility-menu.open {
+    display: flex;
+}
+
+.accessibility-menu h3 {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 1.1rem;
+    color: #0071e3;
+    margin: 0;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+}
+
+@keyframes slideUp {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* ── ACCESSIBILITY OPTIONS ─────────────────────────── */
+.a11y-option {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    cursor: pointer;
+    padding: 0.5rem 0;
+    border-bottom: 1px solid rgba(0, 113, 227, 0.2);
+}
+
+.a11y-option:last-of-type {
+    border-bottom: none;
+}
+
+.a11y-option input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    accent-color: #0071e3;
+    flex-shrink: 0;
+}
+
+.a11y-option span {
+    font-size: 0.95rem;
+    color: #ABABAB;
+    user-select: none;
+    transition: color 0.2s;
+}
+
+.a11y-option:hover span {
+    color: #F0EDE6;
+}
+
+.a11y-option input[type="checkbox"]:focus-visible {
+    outline: 2px solid #F0EDE6;
+}
+
+/* ── RESET BUTTON ────────────────────────────────── */
+.a11y-reset {
+    margin-top: 0.5rem;
+    padding: 0.6rem 1rem;
+    background: transparent;
+    border: 1px solid #0071e3;
+    color: #0071e3;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 0.85rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    transition: all 0.2s;
+    min-height: 44px;
+}
+
+.a11y-reset:hover {
+    background: #0071e3;
+    color: white;
+}
+
+.a11y-reset:focus-visible {
+    outline: 2px solid #F0EDE6;
+    outline-offset: 2px;
+}
+
+/* ── ACCESSIBILITY MODE: HIGH CONTRAST ─────────────── */
+body.a11y-contrast {
+    background: #000000;
+    color: #FFFFFF;
+}
+
+body.a11y-contrast header {
+    border-bottom-color: #0071e3;
+    background: rgba(0, 0, 0, 0.95);
+}
+
+body.a11y-contrast nav a {
+    color: #FFFFFF;
+}
+
+body.a11y-contrast .feat-card {
+    border: 1px solid #0071e3;
+    background: #000000;
+}
+
+body.a11y-contrast .proj-card {
+    border: 1px solid #0071e3;
+}
+
+body.a11y-contrast a {
+    text-decoration: underline;
+}
+
+body.a11y-contrast .btn {
+    border: 2px solid currentColor;
+}
+
+/* ── ACCESSIBILITY MODE: LARGE TEXT ────────────────── */
+body.a11y-large-text {
+    font-size: 150%;
+}
+
+body.a11y-large-text .section-heading {
+    font-size: clamp(4rem, 10vw, 7.5rem);
+}
+
+body.a11y-large-text .proj-name {
+    font-size: clamp(2.8rem, 6vw, 4.5rem);
+}
+
+body.a11y-large-text .hero h1 {
+    font-size: clamp(4rem, 12vw, 7rem);
+}
+
+body.a11y-large-text .hero-eyebrow {
+    font-size: 1.1rem;
+}
+
+body.a11y-large-text button,
+body.a11y-large-text .btn {
+    min-height: 52px;
+    font-size: 1rem;
+}
+
+/* ── ACCESSIBILITY MODE: DYSLEXIA FONT ─────────────── */
+body.a11y-dyslexia,
+body.a11y-dyslexia * {
+    font-family: 'OpenDyslexic', sans-serif !important;
+}
+
+body.a11y-dyslexia {
+    font-family: 'OpenDyslexic', sans-serif;
+}
+
+/* ── ACCESSIBILITY MODE: NO ANIMATIONS ─────────────── */
+body.a11y-no-motion {
+    animation: none !important;
+}
+
+body.a11y-no-motion *,
+body.a11y-no-motion *::before,
+body.a11y-no-motion *::after {
+    animation: none !important;
+    transition: none !important;
+}
+
+body.a11y-no-motion .reveal {
+    opacity: 1;
+    transform: none;
+}
+
+/* ── ACCESSIBILITY MODE: INCREASED SPACING ─────────── */
+body.a11y-spacing {
+    line-height: 1.8;
+}
+
+body.a11y-spacing p {
+    line-height: 1.9;
+}
+
+body.a11y-spacing .section {
+    padding: 8rem 2.5rem;
+}
+
+body.a11y-spacing li {
+    margin-bottom: 0.8rem;
+}
+
+/* ── MOBILE ACCESSIBILITY TOGGLE ────────────────────── */
+@media (max-width: 768px) {
+    .accessibility-toggle {
+        bottom: 1.5rem;
+        right: 1.5rem;
+        width: 48px;
+        height: 48px;
+    }
+
+    .accessibility-menu {
+        bottom: 5.5rem;
+        right: 1.5rem;
+        max-width: 260px;
+    }
+}
+
+/* ── RESPECT USER'S MOTION PREFERENCES ──────────────────────────── */
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+
+    /* Disable custom cursor for reduced motion */
+    body { cursor: auto; }
+    .cursor-dot,
+    .cursor-ring { display: none !important; }
+
+    /* Disable animations but keep the visual state */
+    .nav-cta::before { display: none; }
+    .reveal { opacity: 1; transform: none; }
+    .hero-flare { animation: none; }
+}
+
+/* Ensure sufficient color contrast for footer links */
+.footer-col a {
+    color: #ABABAB;
+}
+
+.footer-col a:hover,
+.footer-col a:focus {
+    color: #F0EDE6;
+}
+
+.footer-col a:focus-visible {
+    outline: 2px solid #0071e3;
+    outline-offset: 2px;
+    border-radius: 2px;
+}
+
+/* Improve focus visibility for navigation */
+nav a:focus-visible {
+    outline: 2px solid #0071e3;
+    outline-offset: 2px;
+    border-radius: 2px;
+}
+
+/* Focus visibility for buttons */
+.btn:focus-visible,
+.nav-cta:focus-visible {
+    outline: 2px solid #0071e3;
+    outline-offset: 2px;
+}
+
+/* Improve text readability */
+body {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/* Better contrast for mono text */
+.section-tag,
+.proj-tag,
+.team-dept-title,
+.footer-col h5 {
+    color: #0071e3;
+}
+
+/* Ensure buttons have sufficient touch target size (minimum 44x44px) */
+button,
+.btn,
+a.nav-cta {
+    min-height: 44px;
+    min-width: 44px;
+}
+
+.nav-cta {
+    padding: 0.6rem 1.2rem;
+}
+
+/* High contrast mode support */
+@media (prefers-contrast: more) {
+    body {
+        color: #F0EDE6;
+        background: #000000;
+    }
+
+    header {
+        border-bottom-color: #0071e3;
+    }
+
+    nav a {
+        color: #FFFFFF;
+    }
+
+    .feat-card {
+        background: #0D0D0D;
+        border: 1px solid #0071e3;
+    }
+}
+
+/* Support for light mode preferences if user has set it */
+@media (prefers-color-scheme: light) {
+    /* Note: This site is dark-first, but respecting preference */
+    body {
+        color: #1A1A1A;
+    }
+}
+
+/* Ensure smooth scrolling on support */
+@supports (scroll-behavior: smooth) {
+    html {
+        scroll-behavior: smooth;
+    }
+}

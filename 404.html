@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="pt-BR" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>404 — Página não encontrada | Hypernova</title>
+    <meta name="description" content="A página que você procura não existe. Volte ao site da Hypernova.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Bebas+Neue&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Space Grotesk', sans-serif;
+            background: #0D0D0D;
+            color: #F0EDE6;
+            line-height: 1.5;
+            -webkit-font-smoothing: antialiased;
+            overflow-x: hidden;
+        }
+        .error-container {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 2rem;
+            position: relative;
+            background: linear-gradient(160deg, rgba(0,113,227,0.04) 0%, transparent 50%);
+        }
+        .error-container::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(160deg, rgba(13,13,13,0.75) 0%, rgba(13,13,13,0.88) 60%, rgba(13,13,13,0.96) 100%);
+            z-index: 0;
+        }
+        .error-content {
+            text-align: center;
+            position: relative;
+            z-index: 1;
+            max-width: 600px;
+        }
+        .error-code {
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: clamp(4rem, 15vw, 12rem);
+            letter-spacing: 0.06em;
+            color: #0071e3;
+            line-height: 1;
+            margin-bottom: 1rem;
+            text-shadow: 0 0 40px rgba(0, 113, 227, 0.3);
+        }
+        .error-title {
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: clamp(1.5rem, 5vw, 2.5rem);
+            letter-spacing: 0.04em;
+            margin-bottom: 1rem;
+            color: #F0EDE6;
+        }
+        .error-description {
+            font-size: 1rem;
+            color: #ABABAB;
+            margin-bottom: 2.5rem;
+            line-height: 1.8;
+        }
+        .error-actions {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            padding: 0.75rem 1.5rem;
+            border-radius: 2px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 0.9rem;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+            transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+            border: none;
+            cursor: pointer;
+        }
+        .btn-blue {
+            background: #0071e3;
+            color: #fff;
+            min-height: 44px;
+        }
+        .btn-blue:hover {
+            background: #0058b0;
+            transform: translateY(-1px);
+            box-shadow: 0 0 20px rgba(0, 113, 227, 0.3);
+        }
+        .btn-ghost {
+            background: transparent;
+            color: #ABABAB;
+            border: 1px solid #2C2C2C;
+            min-height: 44px;
+        }
+        .btn-ghost:hover {
+            color: #F0EDE6;
+            border-color: #0071e3;
+        }
+        @media (prefers-reduced-motion: reduce) {
+            * {
+                animation: none !important;
+                transition: none !important;
+            }
+        }
+        @media (max-width: 768px) {
+            .error-code { margin-bottom: 0.5rem; }
+            .error-actions { gap: 0.75rem; }
+            .btn {
+                padding: 0.6rem 1.2rem;
+                font-size: 0.85rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="error-container">
+        <div class="error-content">
+            <div class="error-code">404</div>
+            <h1 class="error-title">Página não encontrada</h1>
+            <p class="error-description">
+                Parece que você chegou a uma página que não existe. 
+                A foguete se perdeu no espaço! Que tal voltar ao site principal?
+            </p>
+            <div class="error-actions">
+                <a href="/" class="btn btn-blue">Voltar ao Início</a>
+                <a href="/#sobre" class="btn btn-ghost">Sobre</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

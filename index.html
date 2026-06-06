@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="pt-BR" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hypernova — Foguetagem e Inovação</title>
+    <meta name="description" content="Hypernova — Foguetagem amadora, circuitos avançados e soluções científicas acessíveis para estudantes e entusiastas.">
+    <meta property="og:title" content="Hypernova — Foguetagem e Inovação">
+    <meta property="og:description" content="Desenvolvemos soluções científicas com recursos acessíveis, criando tecnologia real para estudantes e entusiastas.">
+    <meta property="og:image" content="https://hypernova-project.github.io/assets/img/logo.png">
+    <meta property="og:image:alt" content="Hypernova Logo">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://hypernova-project.github.io">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Hypernova — Foguetagem e Inovação">
+    <meta name="twitter:description" content="Desenvolvemos soluções científicas com recursos acessíveis, criando tecnologia real para estudantes e entusiastas.">
+    <meta name="theme-color" content="#0071e3">
+    <meta name="color-scheme" content="dark">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Bebas+Neue&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/fonts.css">
+    <link rel="stylesheet" href="assets/css/accessibility.css">
+    <link rel="icon" type="image/png" href="assets/img/favicon/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="assets/img/favicon/favicon.svg" />
+    <link rel="shortcut icon" href="assets/img/favicon/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/img/favicon/apple-touch-icon.png" />
+    <meta name="apple-mobile-web-app-title" content="Hypernova" />
+    <link rel="manifest" href="assets/img/favicon/site.webmanifest" />
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-VXWD0TY3Z9"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-VXWD0TY3Z9');
+    </script>
+</head>
+<body>
+
+    <div class="cursor-dot" id="cdot"></div>
+    <div class="cursor-ring" id="cring"></div>
+
+    <!-- ACCESSIBILITY TOGGLE -->
+    <button class="accessibility-toggle" id="a11y-toggle" aria-label="Toggle accessibility mode" title="Accessibility Mode (A)">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 16 16">
+            <path d="M9.5 1.5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0M6 5.5l-4.535-.442A.531.531 0 0 1 1.531 4H14.47a.531.531 0 0 1 .066 1.058L10 5.5V9l.452 6.42a.535.535 0 0 1-1.053.174L8.243 9.97c-.064-.252-.422-.252-.486 0l-1.156 5.624a.535.535 0 0 1-1.053-.174L6 9z"/>
+        </svg>
+    </button>
+
+    <!-- ACCESSIBILITY MENU -->
+    <div class="accessibility-menu" id="a11y-menu" aria-label="Accessibility options">
+        <h3>Modo Acessibilidade</h3>
+        
+        <label class="a11y-option">
+            <input type="checkbox" id="a11y-contrast" aria-label="Enable high contrast mode">
+            <span>Alto Contraste</span>
+        </label>
+        
+        <label class="a11y-option">
+            <input type="checkbox" id="a11y-large-text" aria-label="Enable larger text">
+            <span>Texto Maior</span>
+        </label>
+        
+        <label class="a11y-option">
+            <input type="checkbox" id="a11y-dyslexia" aria-label="Enable dyslexia-friendly font">
+            <span>Fonte Dislexia-Friendly</span>
+        </label>
+        
+        <label class="a11y-option">
+            <input type="checkbox" id="a11y-no-motion" aria-label="Disable animations">
+            <span>Sem Animações</span>
+        </label>
+        
+        <label class="a11y-option">
+            <input type="checkbox" id="a11y-spacing" aria-label="Increase line spacing">
+            <span>Espaçamento Aumentado</span>
+        </label>
+        
+        <button class="a11y-reset" id="a11y-reset-btn">Restaurar Padrão</button>
+    </div>
+
+    <!-- HEADER -->
+    <header id="header">
+        <a href="#" class="logo">
+            <img src="assets/img/logo.png" alt="Hypernova Logo">
+            <span class="logo-text">HYPER<span class="logo-dot">·</span>NOVA</span>
+        </a>
+        <nav>
+            <ul id="nav-menu">
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#projetos">Projetos</a></li>
+                <li><a href="#galeria">Galeria</a></li>
+                <li><a href="#equipe">Equipe</a></li>
+                <li><a href="mailto:hypernova.rocket@gmail.com" class="nav-cta">Contato</a></li>
+            </ul>
+        </nav>
+        <button class="hamburger" id="hamburger" aria-label="Menu" aria-expanded="false">
+            <span></span><span></span><span></span>
+        </button>
+    </header>
+
+    <!-- HERO -->
+    <section class="hero">
+        <div class="hero-grid"></div>
+        <div class="hero-flare"></div>
+        <div class="hero-content">
+            <div class="hero-eyebrow">Sorocaba, SP // Projeto Estudantil</div>
+            <h1>
+                TRANS&shy;FOR&shy;MANDO<br>
+                <span class="accent">IDEIAS</span><br>
+                EM VÔO
+            </h1>
+            <p class="hero-desc">Montamos, testamos, erramos e melhoramos. Tudo feito por estudantes e entusiastas, com recursos simples e muita tentativa e ajuste.</p>
+            <div class="hero-actions">
+                <a href="#projetos" class="btn btn-blue">Ver Projetos →</a>
+                <a href="#sobre" class="btn btn-ghost">Nossa História</a>
+            </div>
+        </div>
+        <div class="hero-stats">
+            <div class="stat-item">
+                <div class="stat-num">3+</div>
+                <div class="stat-label">Projetos</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-num">10+</div>
+                <div class="stat-label">Membros</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-num">OBAFOG</div>
+                <div class="stat-label">Medalhistas</div>
+            </div>
+        </div>
+        <div class="scroll-hint">
+            <div class="scroll-line"></div>
+            Rolar para ver
+        </div>
+    </section>
+
+    <!-- FEATURES -->
+    <section id="features">
+        <div class="section">
+            <div class="section-tag">O que fazemos</div>
+            <h2 class="section-heading">PROJETOS<br>HONESTOS</h2>
+            <p class="section-sub">Feitos passo a passo, com o que temos à mão. Tecnologia real, não promessas.</p>
+        </div>
+        <div class="features-grid">
+            <div class="feat-card reveal">
+                <div class="feat-num">[ 01 ]</div>
+                <div class="feat-title">Foguetagem Amadora</div>
+                <p class="feat-desc">Foguetes de garrafa e PVC, testados na raça, priorizando segurança e reaproveitamento de peças.</p>
+            </div>
+            <div class="feat-card reveal">
+                <div class="feat-num">[ 02 ]</div>
+                <div class="feat-title">Circuitos e Controle</div>
+                <p class="feat-desc">Módulos simples de controle e telemetria que cabem no bolso e podem ser reparados fácil.</p>
+            </div>
+            <div class="feat-card reveal">
+                <div class="feat-num">[ 03 ]</div>
+                <div class="feat-title">Sensoriamento</div>
+                <p class="feat-desc">Estações meteorológicas compactas para ter dados básicos antes dos lançamentos.</p>
+            </div>
+            <div class="feat-card reveal">
+                <div class="feat-num">[ 04 ]</div>
+                <div class="feat-title">Pesquisa Aplicada</div>
+                <p class="feat-desc">Experimentos simples que comprovam o que estudamos em livros e fóruns.</p>
+            </div>
+            <div class="feat-card reveal">
+                <div class="feat-num">[ 05 ]</div>
+                <div class="feat-title">Educação Aberta</div>
+                <p class="feat-desc">Transparência total nos processos, incluindo falhas, para garantir aprendizado coletivo real.</p>
+            </div>
+            <div class="feat-card reveal">
+                <div class="feat-num">[ 06 ]</div>
+                <div class="feat-title">Sustentabilidade</div>
+                <p class="feat-desc">Reaproveitamento máximo de peças e materiais, porque verba curta exige criatividade.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ABOUT -->
+    <div class="divider-section">
+        <div class="section" id="sobre">
+            <div class="about-wrap">
+                <div class="about-sticky">
+                    <div class="section-tag">Nossa Origem</div>
+                    <h2 class="section-heading">QUEM<br>SOMOS</h2>
+                    <p class="section-sub">Um grupo que não espera condições perfeitas para fazer ciência de verdade.</p>
+                </div>
+                <div class="about-body">
+                    <h3>Como Começou</h3>
+                    <p>Começamos com o que dava: foguetes de garrafa PET, sensores básicos com Arduino e testes no quintal. Sem laboratório e sem verba grande, fomos aprendendo a reaproveitar peças, montar eletrônica modular e usar software livre para tirar as ideias do papel.</p>
+                    <p>A Hypernova nasceu da vontade de entender como as coisas funcionam. Somos estudantes e entusiastas que se juntaram para montar e ajustar projetos reais, com criatividade, reaproveitamento e estudo constante.</p>
+                    <h3>Missão</h3>
+                    <p>Aprender e compartilhar tecnologia acessível com jovens e curiosos, mostrando o que funcionou e o que ainda estamos ajustando.</p>
+                    <h3>Visão</h3>
+                    <p>Ser lembrados como um grupo que dividiu aprendizados reais em foguetagem e eletrônica, sem prometer mais do que pode entregar.</p>
+                    <h3>Valores</h3>
+                    <ul class="values-list">
+                        <li>Transparência sobre acertos e erros</li>
+                        <li>Simplicidade para facilitar manutenção</li>
+                        <li>Reaproveitamento antes de comprar novo</li>
+                        <li>Segurança antes de performance</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- PROJETOS -->
+    <section id="projetos">
+        <div class="section">
+            <div class="section-tag">Projetos Principais</div>
+            <h2 class="section-heading">INOVAÇÃO<br>QUE VÔA</h2>
+        </div>
+        <div class="projects-list">
+            <div class="proj-card reveal">
+                <div class="proj-media">
+                    <img src="assets/img/flightbuddy.jpg" alt="FlightBuddy" loading="lazy" srcset="assets/img/flightbuddy.jpg 1x, assets/img/flightbuddy.jpg 2x">
+                </div>
+                <div class="proj-info">
+                    <div class="proj-tag">Base de Lançamento</div>
+                    <div class="proj-name">FLIGHT<br>BUDDY</div>
+                    <p class="proj-desc">Base de lançamento modular para foguetes de água e pressão. Usa peças acessíveis, desmonta fácil para conserto e conta com eletrônica simples que ajuda a disparar em condições mais seguras.</p>
+                    <div class="proj-status">
+                        <span class="proj-status-dot pulse"></span>
+                        Status: Ativo — Em campo
+                    </div>
+                </div>
+            </div>
+            <div class="proj-card reveal">
+                <div class="proj-media">
+                    <img src="assets/img/novasquall.png" alt="NovaSquall" loading="lazy" srcset="assets/img/novasquall.png 1x, assets/img/novasquall.png 2x">
+                </div>
+                <div class="proj-info">
+                    <div class="proj-tag">Estação Meteorológica</div>
+                    <div class="proj-name">NOVA<br>SQUALL</div>
+                    <p class="proj-desc">Estação meteorológica portátil em estágio preliminar. Mede umidade, temperatura, vento, radiação UV e chuva para termos noção básica do clima antes dos lançamentos.</p>
+                    <div class="proj-status">
+                        <span class="proj-status-dot"></span>
+                        Status: Em Desenvolvimento
+                    </div>
+                </div>
+            </div>
+            <div class="proj-card reveal">
+                <div class="proj-media">
+                    <video autoplay loop muted playsinline poster="assets/img/onesky.jpg" loading="lazy">
+                        <source src="assets/img/video2.mp4" type="video/mp4">
+                        <img src="assets/img/onesky.jpg" alt="OneSky">
+                    </video>
+                </div>
+                <div class="proj-info">
+                    <div class="proj-tag">Foguete OBAFOG</div>
+                    <div class="proj-name">ONE<br>SKY</div>
+                    <p class="proj-desc">Foguete classificado para a Jornada de Foguetes da OBAFOG. Feito para ser reutilizável e estável. Ainda estamos ajustando aerodinâmica e recuperação a cada voo.</p>
+                    <div class="proj-status">
+                        <span class="proj-status-dot pulse"></span>
+                        Status: Classificado — Ajustes em andamento
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- GALERIA -->
+    <div class="divider-section">
+        <div class="section" id="galeria">
+            <div class="section-tag">Momentos</div>
+            <h2 class="section-heading">NOSSA<br>JORNADA</h2>
+        </div>
+        <div class="gallery-grid">
+            <div class="gallery-item"><img src="assets/img/galeria1.jpg" alt="Equipe Hypernova" loading="lazy" srcset="assets/img/galeria1.jpg 1x, assets/img/galeria1.jpg 2x"></div>
+            <div class="gallery-item"><img src="assets/img/galeria2.jpg" alt="Lançamento" loading="lazy" srcset="assets/img/galeria2.jpg 1x, assets/img/galeria2.jpg 2x"></div>
+            <div class="gallery-item"><img src="assets/img/galeria3.jpg" alt="Preparação" loading="lazy" srcset="assets/img/galeria3.jpg 1x, assets/img/galeria3.jpg 2x"></div>
+            <div class="gallery-item"><img src="assets/img/galeria4.jpg" alt="Foguetes" loading="lazy" srcset="assets/img/galeria4.jpg 1x, assets/img/galeria4.jpg 2x"></div>
+            <div class="gallery-item"><img src="assets/img/galeria6.jpeg" alt="Base de lançamento" loading="lazy" srcset="assets/img/galeria6.jpeg 1x, assets/img/galeria6.jpeg 2x"></div>
+            <div class="gallery-item"><img src="assets/img/galeria7.jpeg" alt="Montagem de aleta" loading="lazy" srcset="assets/img/galeria7.jpeg 1x, assets/img/galeria7.jpeg 2x"></div>
+            <div class="gallery-item"><img src="assets/img/galeria8.jpeg" alt="Foguete em queda livre" loading="lazy" srcset="assets/img/galeria8.jpeg 1x, assets/img/galeria8.jpeg 2x"></div>
+            <div class="gallery-item"><img src="assets/img/galeria9.jpeg" alt="Bate-papo com equipe" loading="lazy" srcset="assets/img/galeria9.jpeg 1x, assets/img/galeria9.jpeg 2x"></div>
+        </div>
+    </div>
+
+    <!-- EQUIPE -->
+    <section id="equipe">
+        <div class="section">
+            <div class="section-tag">Nosso Time</div>
+            <h2 class="section-heading">AS PESSOAS<br>POR TRÁS</h2>
+            <p class="section-sub">Cada missão tem um time. Aqui está o nosso.</p>
+        </div>
+        <div class="team-grid">
+            <div class="team-dept reveal">
+                <div class="team-dept-title">🔧 Técnico / Desenvolvimento</div>
+                <div class="team-member-name"><strong>Raphael Michelacci Spezzotto Padilha</strong></div>
+                <div class="team-member-name"><strong>Bruno Michelacci Spezzotto de Moraes</strong></div>
+                <div class="team-member-name"><strong>Ricardo Otávio Mariano</strong></div>
+            </div>
+            <div class="team-dept reveal">
+                <div class="team-dept-title">📢 Comunicação e Divulgação</div>
+                <div class="team-member-name"><strong>Eduardo Hilarino dos Santos</strong></div>
+                <div class="team-member-name"><strong>Raphael Michelacci Spezzotto Padilha</strong></div>
+            </div>
+            <div class="team-dept reveal">
+                <div class="team-dept-title">🛠️ Logística / Secretário</div>
+                <div class="team-member-name"><strong>Bruno Michelacci Spezzotto de Moraes</strong></div>
+                <div class="team-member-name"><strong>Kael Salles Farinha</strong></div>
+            </div>
+            <div class="team-dept reveal">
+                <div class="team-dept-title">📋 Liderança / Gestão</div>
+                <div class="team-member-name"><strong>Lucas de Oliveira Freitas</strong></div>
+                <div class="team-member-name"><strong>Carlos Eduardo Hidalgo (Cadu)</strong></div>
+            </div>
+            <div class="team-dept reveal" style="grid-column: span 2;">
+                <div class="team-dept-title">🚀 Cargos em Campo — Execução Prática</div>
+                <div class="team-member-name">👨‍🏫 <strong>Prof. Marcelo</strong> — Líder de Campo</div>
+                <div class="team-member-name">🔫 <strong>Lucas / Kael</strong> — Gatilho</div>
+                <div class="team-member-name">💨 <strong>Cadu / Ricardo</strong> — Bombeamento</div>
+                <div class="team-member-name">✅ <strong>Eduardo / Raphael</strong> — Checagem Final</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer-inner">
+            <div class="footer-top">
+                <div class="footer-brand">
+                    <span class="logo-text">HYPER<span class="logo-dot">·</span>NOVA</span>
+                    <p>Grupo de estudantes e entusiastas compartilhando o que aprendem em foguetagem, eletrônica e projetos científicos acessíveis.</p>
+                </div>
+                <div class="footer-col">
+                    <h5>Links Rápidos</h5>
+                    <ul>
+                        <li><a href="#sobre">Sobre</a></li>
+                        <li><a href="#projetos">Projetos</a></li>
+                        <li><a href="#galeria">Galeria</a></li>
+                        <li><a href="#equipe">Equipe</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h5>Recursos</h5>
+                    <ul>
+                        <li><a href="#">Documentação — Em breve</a></li>
+                        <li><a href="#">Guias — Em breve</a></li>
+                        <li><a href="#">Tutoriais — Em breve</a></li>
+                        <li><a href="#">FAQ — Em breve</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h5>Contato</h5>
+                    <ul>
+                        <li><a href="mailto:hypernova.rocket@gmail.com">hypernova.rocket@gmail.com</a></li>
+                        <li><a href="https://linktr.ee/hypernova_project">Linktree</a></li>
+                        <li><a href="https://github.com/HyperNova-Project">GitHub</a></li>
+                        <li><a href="https://www.instagram.com/project_hypernova/">Instagram</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2026 Hypernova — Todos os direitos reservados</p>
+                <p>Feito com foguete e fio de cobre</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/accessibility.js"></script>
+</body>
+</html>

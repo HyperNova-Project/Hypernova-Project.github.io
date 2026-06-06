@@ -1,0 +1,12 @@
+User-agent: *
+Allow: /
+Disallow: /404.html
+
+# Allow crawling of assets
+Allow: /assets/
+
+# Sitemap
+Sitemap: https://hypernova-project.github.io/sitemap.xml
+
+# Crawl delay (optional - adjust if needed)
+Crawl-delay: 1
