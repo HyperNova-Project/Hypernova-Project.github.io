@@ -29,7 +29,6 @@ Reformulação completa do site, incluindo acessibilidade, performance, SEO, PWA
 ### 🔍 SEO & Descoberta
 - Meta tags Open Graph e Twitter Card completas  
 - `robots.txt` e `sitemap.xml` adicionados  
-- Google Analytics GA4 configurado (ID: G-VXWD0TY3Z9)  
 
 ### 📲 PWA
 - Manifest completo para app instalável  
