@@ -1,0 +1,1 @@
+"# ?? Changelog\n\n## [2.0.0] - 2026-06-06\n### ? Full Revamp\n- Reformula‡ao completa do site oficial\n- Melhorias de acessibilidade, responsividade, performance, SEO, PWA e organiza‡ao de c¢digo\n" 
